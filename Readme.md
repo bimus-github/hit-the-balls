@@ -1,3 +1,3 @@
 ## [Video](./result.mp4)
 
-[![Demo Video](./result.mp4)](./result.mp4)
+## [![Demo Video](./result.png)](./result.mp4)
