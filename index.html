@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hit the Balls</title>
+  </head>
+  <body>
+    <div class="fixed top-0 left-0 text-white p-2 flex flex-col gap-2">
+      <div><span>Score: </span><span id="score">0</span></div>
+      <div><span>Speed: </span><span id="speed">0</span></div>
+    </div>
+
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black z-50 flex items-center justify-center p-4"
+    >
+      <div class="bg-white p-4 rounded max-w-md w-full text-center space-y-2">
+        <div class="flex items-center justify-center gap-2">
+          <p class="text-sm text-gray-500"><b>Points:</b></p>
+          <h1 class="text-2xl font-bold" id="totalScore">0</h1>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <p class="text-sm text-gray-500"><b>Speed:</b></p>
+          <h1 class="text-2xl font-bold" id="totalSpeed">0</h1>
+        </div>
+        <div
+          class="bg-sky-500 hover:bg-sky-600 p-2 rounded text-white text-lg w-full mx-auto"
+        >
+          <button id="start">Start Game</button>
+        </div>
+      </div>
+    </div>
+    <canvas></canvas>
+    <script src="./index.js"></script>
+  </body>
+</html>
